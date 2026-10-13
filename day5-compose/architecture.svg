@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480">
+  <rect width="900" height="480" rx="18" fill="#f4f7fb"/>
+  <text x="450" y="42" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold" fill="#183153">Docker Compose Architecture</text>
+  <rect x="280" y="75" width="340" height="65" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="450" y="103" text-anchor="middle" font-family="Arial" font-size="18" fill="#183153">Browser / Host</text>
+  <text x="450" y="125" text-anchor="middle" font-family="Arial" font-size="15" fill="#183153">localhost:5000</text>
+  <path d="M450 140 V175" stroke="#475569" stroke-width="2.5" fill="none"/>
+  <path d="M442 167 L450 177 L458 167" stroke="#475569" stroke-width="2.5" fill="none"/>
+  <rect x="280" y="180" width="340" height="75" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="450" y="210" text-anchor="middle" font-family="Arial" font-size="19" fill="#14532d">Flask Web Service</text>
+  <text x="450" y="234" text-anchor="middle" font-family="Arial" font-size="15" fill="#14532d">GET /  |  GET /health</text>
+  <path d="M365 255 L240 305" stroke="#475569" stroke-width="2.5" fill="none"/>
+  <path d="M247 295 L238 306 L252 306" stroke="#475569" stroke-width="2.5" fill="none"/>
+  <path d="M535 255 L660 305" stroke="#475569" stroke-width="2.5" fill="none"/>
+  <path d="M648 306 L662 306 L653 295" stroke="#475569" stroke-width="2.5" fill="none"/>
+  <rect x="75" y="310" width="300" height="85" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="225" y="340" text-anchor="middle" font-family="Arial" font-size="19" fill="#92400e">PostgreSQL (db)</text>
+  <text x="225" y="365" text-anchor="middle" font-family="Arial" font-size="15" fill="#92400e">Visits table</text>
+  <text x="225" y="385" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">Named volume: pgdata</text>
+  <rect x="525" y="310" width="300" height="85" rx="12" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="675" y="340" text-anchor="middle" font-family="Arial" font-size="19" fill="#6b21a8">Redis (redis)</text>
+  <text x="675" y="365" text-anchor="middle" font-family="Arial" font-size="15" fill="#6b21a8">Page-hit counter</text>
+  <text x="450" y="445" text-anchor="middle" font-family="Arial" font-size="15" fill="#475569">Services communicate over the Compose network</text>
+</svg>
